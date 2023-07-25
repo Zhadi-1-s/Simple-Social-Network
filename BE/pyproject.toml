@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "be"
+version = "0.1.0"
+description = "Back-end part of Simple CRUD Social-Network app"
+authors = ["mark47B <windachae47@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.0"
+uvicorn = "^0.23.1"
+psycopg2-binary = "^2.9.6"
+sqlmodel = "^0.0.8"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
