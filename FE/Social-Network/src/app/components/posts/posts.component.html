@@ -1,0 +1,12 @@
+<nav>
+    <div>
+        <h1 class="title">Posts</h1>
+    </div>
+</nav>
+
+
+<div *ngFor="let post of posts">
+    <h1>{{post.title}}</h1>
+    <img class="for_img" [src]="post.photoUrl">
+    <hr>
+</div>
