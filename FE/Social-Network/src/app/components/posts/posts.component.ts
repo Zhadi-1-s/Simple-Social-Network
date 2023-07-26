@@ -8,7 +8,6 @@ import { Posts } from 'src/app/shared/posts';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent {
-
     public posts: Posts[] = [
       {
         id:1,
@@ -25,5 +24,4 @@ export class PostsComponent {
         photoUrl:'assets/Rs7.jpg'
       }
     ]
-
 }

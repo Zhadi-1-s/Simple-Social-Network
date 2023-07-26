@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostsComponent } from './components/posts/posts.component';
 import { MainComponent } from './components/main/main.component';
 import { SingleComponent } from './components/single/single.component';
+import { CreateComponent } from './components/create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     MainComponent,
-    SingleComponent
+    SingleComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
