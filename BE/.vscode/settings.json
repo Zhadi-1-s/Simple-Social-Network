@@ -11,4 +11,7 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.envFile": "${workspaceFolder}/!env/dev.env",
+    "files.exclude": {
+        "**/__pycache__/**": true,
+    },
 }

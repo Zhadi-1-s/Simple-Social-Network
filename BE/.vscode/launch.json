@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FastAPI :: Docker",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/config/docker.env",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "main",
+                "--factory"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "presentation": {
+                "hidden": false,
+                "group": "api",
+                "order": 5
+            }
+        },
+        {
+            "name": "FastAPI :: DEBUG",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "/home/jim/.cache/pypoetry/virtualenvs/be-0etalDHM-py3.10/bin/python3.10",
+            "cwd": "${workspaceFolder}",
+            "args": [
+              "main:app",
+              "--host",
+              "0.0.0.0"
+          // , "--workers", "5" // количество воркеров запускаемых по умолчанию.
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "presentation": {
+              "hidden": false,
+              "group": "api",
+              "order": 5
+            }
+        }
+    ]
+}
